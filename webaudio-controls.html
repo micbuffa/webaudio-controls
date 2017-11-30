@@ -2419,7 +2419,8 @@
     </script>
 </dom-module>
 <script>
-    var webAudioControlsMidiManager = new WebAudioControlsManager();
+    if(window.UseWebAudioControlsMidi)
+        var webAudioControlsMidiManager = new WebAudioControlsManager();
 
     // FOR MIDI LEARN
     function WebAudioControlsManager() {
